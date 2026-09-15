@@ -9,9 +9,9 @@ services:
     image: caddy:2-alpine
     container_name: vintrack_caddy
     ports:
-      - "80:80"
-      - "443:443"
-      - "443:443/udp"
+      - "30090:80"
+      - "30091:443"
+      - "30091:443/udp"
     dns:
       - 1.1.1.1
       - 8.8.8.8
