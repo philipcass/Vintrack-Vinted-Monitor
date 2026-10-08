@@ -28,7 +28,7 @@ const BROWSER_REFRESH_MAX_RETRY_MS = 60 * 60 * 1000;
 const BROWSER_REFRESH_ACTION_COOLDOWN_MS = 6 * 60 * 60 * 1000;
 const COMPLETED_SYNC_STATUSES = new Set(["completed", "refreshed"]);
 const VINTRACK_APP_ORIGINS = new Set([
-  "https://vintrack.jakobaio.dev",
+  "https://vintrack.local.weh.bz",
   "http://localhost:3000",
   "http://127.0.0.1:3000",
 ]);

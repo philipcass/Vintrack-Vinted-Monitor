@@ -41,7 +41,11 @@ const primaryProviders: Provider[] = oidcConfigured
               clientSecret: oidcClientSecret!,
           },
       ]
-    : [Discord];
+    : [
+      Discord({
+          issuer: "https://discord.com",
+      }),
+      ];
 const providers: Provider[] = [
     ...primaryProviders,
     ...(githubAuthConfigured
