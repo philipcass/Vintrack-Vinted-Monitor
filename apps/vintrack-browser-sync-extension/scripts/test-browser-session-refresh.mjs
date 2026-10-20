@@ -525,7 +525,7 @@ async function runBrowser(name, directory, transport) {
         JSON.stringify(driver.defaultStoreId) +
         "});" +
         "for(const timer of syncTimers.values())clearTimeout(timer);syncTimers.clear();" +
-        "await extensionApi.storage.local.set({browserLinkToken:'synthetic-link',vintrackAppOrigin:'https://vintrack.jakobaio.dev',vintrackSyncedDomains:['www.vinted.de']});return true;})()",
+        "await extensionApi.storage.local.set({browserLinkToken:'synthetic-link',vintrackAppOrigin:'https://vintrack.local.weh.bz',vintrackSyncedDomains:['www.vinted.de']});return true;})()",
     );
   }
   const tabs = () =>

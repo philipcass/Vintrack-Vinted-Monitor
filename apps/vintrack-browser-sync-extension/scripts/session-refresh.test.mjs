@@ -8,7 +8,7 @@ const source = await readFile(
   new URL("../background.js", import.meta.url),
   "utf8",
 );
-const appOrigin = "https://vintrack.jakobaio.dev";
+const appOrigin = "https://vintrack.local.weh.bz";
 const initialNow = Date.parse("2026-10-02T12:00:00Z");
 const clone = (value) => JSON.parse(JSON.stringify(value));
 function token(expiresAt, issuedAt = initialNow / 1000) {
@@ -641,7 +641,7 @@ test("extension pages are authorized only for their own extension origin", () =>
   for (const [options, scheme] of [[{}, "chrome-extension"], [{ firefox: true }, "moz-extension"]]) {
     const h = harness(options);
     assert.equal(h.context.isExtensionPageSender({ url: `${scheme}://synthetic-own/popup.html` }), true);
-    for (const url of [`${scheme}://foreign/popup.html`, "https://synthetic-own/popup.html", "https://vintrack.jakobaio.dev", "invalid"]) {
+    for (const url of [`${scheme}://foreign/popup.html`, "https://synthetic-own/popup.html", "https://vintrack.local.weh.bz", "invalid"]) {
       assert.equal(h.context.isExtensionPageSender({ url }), false, url);
     }
   }

@@ -1,7 +1,7 @@
 (function () {
   const extensionApi = globalThis.browser || globalThis.chrome;
   const VINTRACK_APP_ORIGINS = new Set([
-    "https://vintrack.jakobaio.dev",
+    "https://vintrack.local.weh.bz",
     "http://localhost:3000",
     "http://127.0.0.1:3000",
   ]);

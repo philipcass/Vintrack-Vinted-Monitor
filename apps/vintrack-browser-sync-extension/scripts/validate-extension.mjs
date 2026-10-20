@@ -4,9 +4,9 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const extensionDir = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const productionAppPattern = "https://vintrack.jakobaio.dev/*";
+const productionAppPattern = "https://vintrack.local.weh.bz/*";
 const runtimeAppOrigins = [
-  "https://vintrack.jakobaio.dev",
+  "https://vintrack.local.weh.bz",
   "http://localhost:3000",
   "http://127.0.0.1:3000",
 ];
@@ -218,12 +218,12 @@ function isSupportedVintedHost(value) {
   );
 }
 
-assert.equal(isAllowedAppOrigin("https://vintrack.jakobaio.dev/account"), true);
+assert.equal(isAllowedAppOrigin("https://vintrack.local.weh.bz/account"), true);
 assert.equal(isAllowedAppOrigin("http://localhost:3000/account"), true);
 assert.equal(isAllowedAppOrigin("http://127.0.0.1:3000/account"), true);
 for (const foreignOrigin of [
   "https://example.com",
-  "https://vintrack.jakobaio.dev.example.com",
+  "https://vintrack.local.weh.bz.example.com",
   "http://vintrack.jakobaio.dev",
   "http://localhost:3001",
 ]) {

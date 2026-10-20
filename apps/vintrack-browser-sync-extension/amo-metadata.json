@@ -21,6 +21,6 @@
     "requires_payment": false,
     "version": {
         "license": "MIT",
-        "approval_notes": "The extension only accepts runtime commands from https://vintrack.jakobaio.dev, its own pages, and explicitly supported Vinted origins. Inline page actions are opt-in and use a closed Shadow DOM. Catalog and item handoffs require final creation inside Vintrack. No browser refresh token, complete cookie jar, checkout confirmation, or payment data is read or transmitted. Source and privacy details are linked from the listing description."
+        "approval_notes": "The extension only accepts runtime commands from https://vintrack.local.weh.bz, its own pages, and explicitly supported Vinted origins. Inline page actions are opt-in and use a closed Shadow DOM. Catalog and item handoffs require final creation inside Vintrack. No browser refresh token, complete cookie jar, checkout confirmation, or payment data is read or transmitted. Source and privacy details are linked from the listing description."
     }
 }
